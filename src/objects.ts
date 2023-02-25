@@ -31,7 +31,6 @@ let employee_two: Employee = {
   },
 };
 
-
 // ! FreeCodeGram
 // const User = {
 //     name: "hitesh",
@@ -39,18 +38,15 @@ let employee_two: Employee = {
 //     isAvtive: true
 // }
 
-function createUser(user : {name: string, isPaid: boolean}){}
+function createUser(user: { name: string; isPaid: boolean }) {}
 
-let newUser = {name: "hitesh", isPaid: false, email: "h@h.com"}
+let newUser = { name: "hitesh", isPaid: false, email: "h@h.com" };
 
-createUser(newUser)
+createUser(newUser);
 
-
-
-function createCourse():{name: string, price: number}{
-    return {name: "reactjs", price: 399}
+function createCourse(): { name: string; price: number } {
+  return { name: "reactjs", price: 399 };
 }
-
 
 // type User = {
 //     name: string;
@@ -58,50 +54,47 @@ function createCourse():{name: string, price: number}{
 //     isActive: boolean
 // }
 
-
 // function createUser(user: User): User{
 //     return {name: "", email: "", isActive: true}
 // }
 
 // createUser({name: "", email: "", isActive: true})
 
-
 type Person = {
-  readonly _id: string
-  name: string
-  email: string
-  isActive: boolean
-  credcardDetails?: number
-}
+  readonly _id: string;
+  name: string;
+  email: string;
+  isActive: boolean;
+  credcardDetails?: number;
+};
 
 let myPerson: Person = {
   _id: "1245",
   name: "h",
   email: "h@h.com",
-  isActive: false
-}
+  isActive: false,
+};
 
 type cardNumber = {
-  cardnumber: string
-}
+  cardnumber: string;
+};
 
 type cardDate = {
-  cardDate: string
-}
+  cardDate: string;
+};
 
-type cardDetails = cardNumber & cardDate & {
-  cvv: number
-}
+type cardDetails = cardNumber &
+  cardDate & {
+    cvv: number;
+  };
 
+let ccccv: cardDetails = {
+  cardnumber: "caasdf",
+  cardDate: "caasdf",
+  cvv: 1,
+};
 
-myPerson.email = "h@gmail.com"
+myPerson.email = "h@gmail.com";
 // myPerson._id = "asa" //? readonly cannot assign
-
-
-
-
-
-
-
 
 // export {}
