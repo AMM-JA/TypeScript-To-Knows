@@ -30,3 +30,78 @@ let employee_two: Employee = {
     console.log(Date);
   },
 };
+
+
+// ! FreeCodeGram
+// const User = {
+//     name: "hitesh",
+//     email: "hitesh@lco.dev",
+//     isAvtive: true
+// }
+
+function createUser(user : {name: string, isPaid: boolean}){}
+
+let newUser = {name: "hitesh", isPaid: false, email: "h@h.com"}
+
+createUser(newUser)
+
+
+
+function createCourse():{name: string, price: number}{
+    return {name: "reactjs", price: 399}
+}
+
+
+// type User = {
+//     name: string;
+//     email: string;
+//     isActive: boolean
+// }
+
+
+// function createUser(user: User): User{
+//     return {name: "", email: "", isActive: true}
+// }
+
+// createUser({name: "", email: "", isActive: true})
+
+
+type Person = {
+  readonly _id: string
+  name: string
+  email: string
+  isActive: boolean
+  credcardDetails?: number
+}
+
+let myPerson: Person = {
+  _id: "1245",
+  name: "h",
+  email: "h@h.com",
+  isActive: false
+}
+
+type cardNumber = {
+  cardnumber: string
+}
+
+type cardDate = {
+  cardDate: string
+}
+
+type cardDetails = cardNumber & cardDate & {
+  cvv: number
+}
+
+
+myPerson.email = "h@gmail.com"
+// myPerson._id = "asa" //? readonly cannot assign
+
+
+
+
+
+
+
+
+// export {}
