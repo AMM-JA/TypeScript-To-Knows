@@ -24,7 +24,7 @@ calculateTax(10_000, 2022);
 // ? If there are unused variables, throw Error
 // "noUnusedLocals": true,
 
-// ! FREE
+// ! FreeCodeGram
 function addTwo(num: number): number {
   return num + 2;
   //return "hello"
