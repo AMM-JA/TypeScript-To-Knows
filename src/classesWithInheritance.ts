@@ -23,21 +23,21 @@ class User implements UserInterface {
   }
 }
 
-class Admin extends User {
-  private editor: string;
+// class Admin extends User {
+//   private editor: string;
 
-  setEditor(editor: string): void {
-    this.editor = editor;
-  }
+//   setEditor(editor: string): void {
+//     this.editor = editor;
+//   }
 
-  getEditor(): string {
-    return this.editor;
-  }
-}
+//   getEditor(): string {
+//     return this.editor;
+//   }
+// }
 
 const some = new User("Monster", "lessons");
 console.log(some.firstName);
 console.log(User.maxAge);
 
-const admin = new Admin("Foo", "Bar");
-console.log(admin);
+// const admin = new Admin("Foo", "Bar");
+// console.log(admin);
