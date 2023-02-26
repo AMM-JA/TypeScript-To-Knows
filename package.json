@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/AMM-JA/TypeScript-To-Knows/issues"
   },
-  "homepage": "https://github.com/AMM-JA/TypeScript-To-Knows#readme"
+  "homepage": "https://github.com/AMM-JA/TypeScript-To-Knows#readme",
+  "dependencies": {
+    "lite-server": "^2.6.1"
+  }
 }
