@@ -1,12 +1,12 @@
 "use strict";
-class Instagram {
+class Instagram1 {
     constructor(cameraMode, filter, burst) {
         this.cameraMode = cameraMode;
         this.filter = filter;
         this.burst = burst;
     }
 }
-class Youtube {
+class Youtube1 {
     constructor(cameraMode, filter, burst, short) {
         this.cameraMode = cameraMode;
         this.filter = filter;
