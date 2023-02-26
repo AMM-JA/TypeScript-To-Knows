@@ -17,4 +17,12 @@ var Status;
 let notStrartedStatus = Status.NotStarted;
 notStrartedStatus = Status.Done;
 console.log(Status.InProgress);
+var SeatChoice;
+(function (SeatChoice) {
+    SeatChoice["AISLE"] = "aisle";
+    SeatChoice[SeatChoice["MIDDLE"] = 3] = "MIDDLE";
+    SeatChoice[SeatChoice["WINDOW"] = 4] = "WINDOW";
+    SeatChoice[SeatChoice["FOURTH"] = 5] = "FOURTH";
+})(SeatChoice || (SeatChoice = {}));
+const hcSeat = SeatChoice.AISLE;
 //# sourceMappingURL=enums.js.map

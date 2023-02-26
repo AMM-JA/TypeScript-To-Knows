@@ -6,17 +6,19 @@
 // Enums have to be in PascalCase.
 // Create a design system for values using enum.
 // ! Use const in this case to create more readable and efficient code!
-// *** Enum ဆိုတာ အစဉ်လိုက်ကိန်းကိုပြောတာ
+
 const enum Size {
   Small = 4,
   Medium,
   Large,
-} //? if first enums is number (no need to assign other)
+} 
+//? if first enums is number (no need to assign other)
 const enum TestText {
   Small = "s",
   Medium = "m",
   Large = "l",
-} //? if first enums is string (need to assign other)
+} 
+//? if first enums is string (need to assign other)
 
 let mySize: Size = Size.Medium;
 let myTestText: TestText = TestText.Large;
@@ -46,3 +48,13 @@ let notStrartedStatus: Status = Status.NotStarted;
 notStrartedStatus = Status.Done;
 
 console.log(Status.InProgress);
+
+// ! FreeCodeGram
+enum SeatChoice {
+  AISLE = "aisle",
+  MIDDLE = 3,
+  WINDOW,
+  FOURTH
+}
+
+const hcSeat = SeatChoice.AISLE
